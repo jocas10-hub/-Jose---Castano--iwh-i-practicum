@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title= title
+  body
+    h1 Custom Object Records
+
+    a(href="/update-cobj") + Create a new record
+
+    table
+      thead
+        tr
+          th brand 
+          th model 
+          th processor 
+      tbody
+        each record in data
+          tr
+            td= record.properties.property_1
+            td= record.properties.property_2
+            td= record.properties.property_3
